@@ -7,6 +7,15 @@ let rename = require("gulp-rename");
 let sass = require("gulp-sass");
 let uglify = require("gulp-uglify");
 
+gulp.task('css', function () {
+    return gulp.src('src/css-libs/*.css')
+      .pipe(concat('_libs.scss'))
+      .pipe(gulp.dest('src/scss'))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
+  });
+
 gulp.task('scss', function () {
     return gulp.src('src/scss/**/*.scss')
         .pipe(sass({
@@ -47,21 +56,12 @@ gulp.task('js', function () {
         .pipe(browserSync.reload({
             stream: true
         }))
-})
-
-gulp.task('css', function () {
-    return gulp.src('src/css-libs/*.scss,[.css]')
-        .pipe(concat('_libs.scss'))
-        .pipe(gulp.dest('src/scss'))
-        .pipe(browserSync.reload({
-            stream: true
-        }))
 });
 
 gulp.task('browser-sync', function () {
     browserSync.init({
         server: {
-            baseDir: 'src/'
+            baseDir: "src/"
         }
     })
 });
@@ -87,12 +87,11 @@ gulp.task('export', async function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('src/css-libs/*.css', gulp.parallel('css'))
-    gulp.watch('src/scss/**/.scss', gulp.parallel('scss'))
+    gulp.watch('src/css-libs/*.css', gulp.parallel('css', 'scss'))
+    gulp.watch('src/scss/**/*.scss', gulp.parallel('scss'))
     gulp.watch('src/*.html', gulp.parallel('html'))
     gulp.watch('src/images/**/*.*', gulp.parallel('images'))
-    gulp.watch('src/js/.js', gulp.parallel('script'))
-
+    gulp.watch('src/js/*.js', gulp.parallel('script'))
 });
 
 gulp.task('clean', async function () {
