@@ -19,7 +19,7 @@ gulp.task('css', function () {
 gulp.task('scss', function () {
     return gulp.src('src/scss/**/*.scss')
         .pipe(sass({
-            outputStyle: "compressed"
+            outputStyle: "extended"
         }))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 8 versions'],
@@ -100,4 +100,4 @@ gulp.task('clean', async function () {
 
 gulp.task('build', gulp.series('clean', 'export'))
 gulp.task('default', gulp.parallel('scss', 'js', 'browser-sync', 
-'watch', 'css'));
+'watch', 'css', 'images'));

@@ -1,1 +1,35 @@
-.header{background-color:yellow;color:red}
+body {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  padding: 0;
+  margin: 0 150px; }
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 30px; }
+  .header__top__wrap {
+    background-color: #cdceff; }
+  .header__top__left a {
+    margin-right: 30px; }
+  .header__top__right__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none; }
+    .header__top__right__nav__list a {
+      text-decoration: none;
+      margin-left: 30px; }
+
+.header__content .img_logo {
+  width: 100px;
+  height: 100px; }
