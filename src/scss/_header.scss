@@ -16,7 +16,7 @@ body{
 
 
         &__wrap{
-            background-color: rgb(38, 40, 143);
+            background-color: #2e3192;
         }
         &__left a{
             margin-right: 30px;
@@ -61,6 +61,11 @@ body{
             &__item a{
                 text-decoration: none;
                 font-weight: 700;
+
+                &:hover{
+                    color: rgb(130, 131, 216);
+                    transition: .4s ease-in-out;
+                }
             }
 
             &__item{
