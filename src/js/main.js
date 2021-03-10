@@ -6,7 +6,7 @@ $(document).ready(function(){
 
   $('.fade').slick({
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     appendDots: $('.your-class'),
     dots: true,
     infinite: true,
