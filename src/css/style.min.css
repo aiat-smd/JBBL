@@ -1,4 +1,32 @@
 @charset "UTF-8";
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*,
+* ::before,
+* ::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  background-color: #feffc5; }
+
+.container {
+  padding: 0;
+  margin: 0 150px; }
+
 .header__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,6 +87,34 @@
         border-bottom: 3px solid #5f60aa; }
     .header__content__nav__item {
       margin-left: 30px; }
+
+.slider {
+  position: relative;
+  width: 100%; }
+  .slider__title::before {
+    position: absolute;
+    content: '';
+    width: 500px;
+    height: 160px;
+    top: -10px;
+    left: -10px;
+    background-color: black;
+    opacity: .5;
+    z-index: -1; }
+  .slider__title {
+    position: absolute;
+    width: 500px;
+    top: 260px;
+    left: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 36px;
+    color: white;
+    letter-spacing: -1px;
+    z-index: 1; }
+  .slider__item {
+    height: 645px;
+    width: 1520px; }
 
 /* Slider */
 .slick-loading .slick-list {
@@ -296,59 +352,3 @@
 
 .slick-arrow.slick-hidden {
   display: none; }
-
-.slider {
-  position: relative;
-  width: 100%; }
-  .slider__title::before {
-    position: absolute;
-    content: '';
-    width: 500px;
-    height: 160px;
-    top: -10px;
-    left: -10px;
-    background-color: black;
-    opacity: .5;
-    z-index: -1; }
-  .slider__title {
-    position: absolute;
-    width: 500px;
-    top: 260px;
-    left: 50px;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 36px;
-    color: white;
-    letter-spacing: -1px;
-    z-index: 1; }
-  .slider__item {
-    height: 645px;
-    width: 1520px; }
-
-html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
-
-*,
-* ::before,
-* ::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0; }
-
-li {
-  list-style: none; }
-
-a {
-  text-decoration: none; }
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Nunito", sans-serif;
-  background-color: #feffc5; }
-
-.container {
-  padding: 0;
-  margin: 0 150px; }
