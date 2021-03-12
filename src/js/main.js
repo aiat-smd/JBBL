@@ -10,7 +10,7 @@ $(document).ready(function(){
     appendDots: $('.your-class'),
     dots: true,
     infinite: true,
-    speed: 800,
+    speed: 700,
     fade: true,
     cssEase: 'linear'
   }); 
