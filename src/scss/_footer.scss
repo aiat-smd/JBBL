@@ -1,12 +1,8 @@
 .footer{
-    height: 200px;
+    padding-top: 60px;
+    height: 300px;
     background-color: rgb(43, 43, 43);
     color: white;
-
-
-    &__wrap{
-
-    }
 
     &__list{
         display: flex;
@@ -14,6 +10,38 @@
 
         &__item{
             width: 300px;
+
         }
     }
+    
+
+    &__bottom{
+        background-color: rgb(24, 23, 23);
+        color: dimgrey;
+        margin-top: 60px;
+        height: 40px;
+        align-items: center;
+
+
+        &__text{
+            text-align: center;
+            padding-top: 10px;
+        }
+    }
+}
+
+.footer a{
+    color: #fff;
+
+    &:hover{
+        color: rgb(170, 172, 248);
+    }
+}
+
+.oursites__item{
+    list-style-type: circle;
+}
+
+.usefullinks__item{
+    list-style-type: circle;
 }
