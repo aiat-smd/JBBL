@@ -1,0 +1,19 @@
+.footer{
+    height: 200px;
+    background-color: rgb(43, 43, 43);
+    color: white;
+
+
+    &__wrap{
+
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+
+        &__item{
+            width: 300px;
+        }
+    }
+}
