@@ -30,6 +30,21 @@
         &__text{
             text-align: center;
             padding-top: 10px;
+            font-size: 12px;
+
+
+            &__a{
+                font-weight: 400 !important;
+                color: dimgrey !important;
+                font-size: 10px;
+            }
+
+            & span{
+                color: rgb(136, 136, 136);
+                letter-spacing: -2px;
+                font-weight: 900;
+                
+            }
         }
     }
 }
