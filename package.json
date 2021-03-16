@@ -8,8 +8,7 @@
   },
   "author": "Isamidinov AIAT",
   "license": "ISC",
-  "bugs": {
-  },
+  "bugs": {},
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
@@ -21,5 +20,7 @@
     "gulp-uglify": "^3.0.2",
     "uglify": "^0.1.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }
