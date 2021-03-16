@@ -1,4 +1,12 @@
 .header{
+    &__fixed{
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;        
+    }
+
     &__top{
         display: flex;
         justify-content: space-between;
@@ -38,13 +46,18 @@
         padding-top: 5px;
 
         &__wrap{
-        height: 80px;
-        background-color: white;    
+        background: white;    
         }
 
         .img_logo{
             width: 270px;
             height: 68px;
+            transition:all 0.5s ease;
+        }
+        .header__mini{
+            width: 180px;
+            height: 45px;
+            transition:all 0.5s ease;
         }
         &__nav{
             display: flex;
@@ -54,7 +67,6 @@
                 font-weight: 700;
 
                 &:hover{
-                    // color: rgb(130, 131, 216);
                     border-bottom: 3px solid rgb(95, 96, 170);
                 }
             }

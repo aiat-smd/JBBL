@@ -1,3 +1,4 @@
+// Slick slider..................
 $(document).ready(function(){
     $('.your-class').slick({
 
@@ -16,7 +17,7 @@ $(document).ready(function(){
   }); 
 
 
-  // AOS 
+  // AOS Scroll.................
 
   AOS.init();
 
@@ -44,3 +45,52 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+// fixed header..................
+
+$(function() {
+  let header = $('.header');
+  let headerMini = $('.img_logo');
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 1) {
+     header.addClass('header__fixed');
+     headerMini.addClass('header__mini');
+    } else {
+     header.removeClass('header__fixed');
+     headerMini.removeClass('header__mini');
+    }
+  });
+ });
+
+ $(function() {
+  let header = $('.header__content__wrap');
+  let hederHeight = header.height(); // вычисляем высоту шапки
+   
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 1) {
+     header.addClass('header_fixed');
+     $('body').css({
+        'paddingTop': hederHeight+'px' // делаем отступ у body, равный высоте шапки
+     });
+    } else {
+     header.removeClass('header_fixed');
+     $('body').css({
+      'paddingTop': 0 // удаляю отступ у body, равный высоте шапки
+     })
+    }
+  });
+ });
+
+ if($(this).scrollTop() > 300) {
+  header.css({
+    'padding': '5px 0',
+    'background': '#f6ffdb',
+    'transition': '.3s'
+  });
+} else {
+  header.css({
+    'padding': '15px 0',
+    'background': '#000000',
+    'transition': '.3s'
+  });
+}

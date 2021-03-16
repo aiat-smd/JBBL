@@ -74,19 +74,13 @@
 .test1{
     width: 600px;
     height: 200px;
-    background-color: blueviolet;
+    background-color: rgb(44, 29, 129);
     margin-bottom: 60px;
+    border-radius: 10px;
 }
-.test2{
-    margin-left: 600px;
-    width: 600px;
-    height: 200px;
-    background-color: rgb(204, 85, 85);
-    margin-bottom: 60px;
+.test1:nth-child(2){
+    margin-left: 620px;
 }
-.test3{
-    width: 600px;
-    height: 200px;
-    background-color: rgb(198, 241, 79);
-    margin-bottom: 60px;
+.test1:nth-child(4){
+    margin-left: 620px;
 }
