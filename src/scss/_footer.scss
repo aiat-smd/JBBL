@@ -2,7 +2,7 @@
     padding-top: 60px;
     height: 300px;
     background-color: rgb(43, 43, 43);
-    color: white;
+    color: rgb(160, 160, 160);
 
     &__list{
         display: flex;
@@ -16,6 +16,7 @@
 
     &__title{
         margin-bottom: 20px;
+        color: white;
     }
     
 
@@ -50,10 +51,10 @@
 }
 
 .footer a{
-    color: #fff;
+    color: rgb(160, 160, 160);
 
     &:hover{
-        color: rgb(170, 172, 248);
+        color: rgb(255, 255, 255);
     }
 }
 
