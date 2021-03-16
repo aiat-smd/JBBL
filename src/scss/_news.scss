@@ -1,0 +1,26 @@
+.news{
+
+    &__title{
+        font-family: inherit;
+        font-size: 44px;
+        font-weight: 800;
+        color: rgb(41, 40, 128);
+        text-align: center;
+        margin-bottom: 50px;
+        background: linear-gradient(70deg, rgb(0, 0, 255), rgb(255, 0, 255));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+
+        &__item{
+            width: 600px;
+            height: 200px;
+            background-color: lightcoral;
+        }
+    }
+}
