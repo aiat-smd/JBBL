@@ -7,13 +7,15 @@ $(document).ready(function(){
 
   $('.fade').slick({
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     appendDots: $('.your-class'),
     dots: true,
     infinite: true,
     speed: 700,
     fade: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    pauseOnHover: false,
+    pauseOnFocus: false,
   }); 
 
 
