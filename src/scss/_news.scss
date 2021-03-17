@@ -1,15 +1,23 @@
 .news{
 
     &__title{
+        display: inline-block;
         font-family: inherit;
-        font-size: 44px;
-        font-weight: 800;
-        color: rgb(41, 40, 128);
+        font-size: 34px;
+        font-weight: 700;
         text-align: center;
         margin-bottom: 50px;
+        margin-top: 15px;
+        padding: 0px 30px;
         background: linear-gradient(70deg, rgb(0, 0, 255), rgb(255, 0, 0));
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        border: 1px #2e3192 solid;
+        border-radius: 30px;
+    }
+
+    &__wrap{
+        text-align: center;
     }
 
 
